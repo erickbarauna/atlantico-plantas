@@ -33,7 +33,11 @@ header {
     align-items: center;
 }
 
-.logo-header > img {
+.logo-header > a {
+    cursor: pointer;
+}
+
+.logo-header > a > img {
     width: 250px;
 }
 
@@ -81,8 +85,8 @@ header {
 main {
     display: flex;
     justify-content: center;
+    background-color: #89c8fd;
     padding: 10px;
-    background-color: #102E4A;
     color: white;
 }
 
@@ -96,6 +100,13 @@ main {
     
 }
 
-.container > p {
-    text-align: justify;
+.conteudo {
+    padding: 53px 30px;
+    background-color: white;
+    color: #102E4A;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
