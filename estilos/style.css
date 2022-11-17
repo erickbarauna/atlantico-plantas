@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*
+PALETA DE CORES
+---------------
+#9CFC97
+#6BA368
+#0e7e25
+#515B3A
+#2C423F
+#353D2F
+#041B15
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +29,7 @@ body, html {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -26,41 +38,61 @@ header {
 }
 
 .link-menu {
-    color: darkgreen;
+    color: #0e7e25;
     font-size: 18px;
+    padding: 13px 26px;
+    border-radius: 30px;
 }
 
-.link-menu:not(:last-child) {
-    margin-right: 50px;
+.link-menu:hover {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+    transition: all .3s;
 }
 
 .link-cadastro {
-    color: darkgreen;
+    padding: 13px 26px;
+    color: #0e7e25;
     font-size: 18px;
-    margin-right: 25px;
+    border: 2px solid #0e7e25;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .link-cadastro:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 20px;
+}
+
+.link-cadastro:hover {
+    background-color: #112926;
+    border-color: #112926;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+    -webkit-transition: background-color .7s, border-color .7s, color .2s;
+    -moz-transition: background-color .7s, border-color .7s, color .2s;
+    -ms-transition: background-color .7s, border-color .7s, color .2s;
+    -o-transition: background-color .7s, border-color .7s, color .2s;
 }
 
 main {
     display: flex;
     justify-content: center;
     padding: 10px;
+    background-color: #112926;
+    color: white;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
+    columns: 2;
     max-width: 1200px;
     margin-top: 50px;
 }
 
 .container > img {
-    margin-right: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.379);
+    
 }
 
 .container > p {
