@@ -37,7 +37,7 @@ header {
     cursor: pointer;
 }
 
-.logo-header > a > img {
+.logo-header abbr > a > img {
     width: 250px;
 }
 
@@ -76,24 +76,18 @@ header {
     border-color: #1e4e48;
     color: white;
     transition: background-color .7s, border-color .7s, color .2s;
-    -webkit-transition: background-color .7s, border-color .7s, color .2s;
-    -moz-transition: background-color .7s, border-color .7s, color .2s;
-    -ms-transition: background-color .7s, border-color .7s, color .2s;
-    -o-transition: background-color .7s, border-color .7s, color .2s;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    background-color: #89c8fd;
+    
+    background-color: #041B15;
     padding: 10px;
-    color: white;
 }
 
 .container {
+    display: flex;
+    justify-content: space-evenly;
     columns: 2;
-    max-width: 1200px;
-    margin-top: 50px;
 }
 
 .container > img {
@@ -101,12 +95,17 @@ main {
 }
 
 .conteudo {
+    max-width: 550px;
     padding: 53px 30px;
-    background-color: white;
-    color: #102E4A;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    color: white;
+}
+
+.conteudo > h1 {
+    font-size: 3.1em;
+    margin-bottom: 40px;
+}
+
+.conteudo > p {
+    font-size: 1.3em;
+    line-height: 35px;
 }
