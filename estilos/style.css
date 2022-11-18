@@ -22,6 +22,29 @@ PALETA DE CORES
     font-family: 'Poppins', sans-serif;
 }
 
+.containergrid{
+display: grid ;
+grid-template-columns: 4fr;
+grid-template-rows: 20vh 70vh 10vh;
+grid-template-areas: "header header"
+                    "main main"
+                    "footer footer";
+
+}
+
+header{
+grid-area: header;
+}
+
+main{
+grid-area: main;
+}
+
+
+footer{
+grid-area: footer;
+}
+
 body, html {
     height: 100vh;
     width: 100vw;
