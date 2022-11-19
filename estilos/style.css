@@ -25,7 +25,7 @@ PALETA DE CORES
 .containergrid{
     display: grid ;
     grid-template-columns: 4fr;
-    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-rows: 14vh 50vh 10vh;
     grid-template-areas: "header header"
                         "main main"
                         "footer footer";
@@ -101,7 +101,8 @@ main {
     columns: 2;
 }
 
-.container > img {
+.container > .imagem {
+    width: 30%;
     
 }
 
