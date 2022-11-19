@@ -132,3 +132,7 @@ main {
 footer{
     grid-area: footer;
 }
+
+.cadastro{
+    color: aliceblue;
+}
