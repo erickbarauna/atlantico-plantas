@@ -2,24 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/*
-PALETA DE CORES
----------------
-#9CFC97  #89c8fd
-#6BA368
-#0e7e25
-#515B3A
-#2C423F
-#353D2F
-#041B15
-*/
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 1.1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -31,7 +19,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .header > a > img {
@@ -73,47 +61,139 @@ a {
     transition: background-color .7s, border-color .7s, color .2s;
 }
 
-main {
-    grid-area: main;
-    background-color: #041B15;
-    padding: 10px;
+section > .texto {
+    max-width: 580px;
+    margin: 50px;
 }
 
-.container {
+.texto > h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+span {
+    font-size: 2em;
+}
+
+.texto > p {
+    font-size: 1.25em;
+    line-height: 1.6em;
+}
+
+.flex-verde {
     display: flex;
-    justify-content: space-evenly;
-    columns: 2;
-}
-
-.container > .imagem {
-    width: 30%;
-    
-}
-
-.conteudo {
-    max-width: 700px;
-    padding: 53px 30px;
-    color: white;
-}
-
-.conteudo > .titulo-com-icone {
-    display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+    margin: 0 auto;
+    color: white;
+    background-color: #041B15;
 }
 
-.conteudo > .titulo-com-icone > h1 {
-    display: inline-block;
-    font-size: 3.1em;
-    margin-top: 25px;
+.imagem {
+    width: 550px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 30px;
 }
 
-.conteudo > p {
-    font-size: 1.3em;
-    line-height: 35px;
+.flex-verde > #imagem1 {
+    background: url(../img/vasos.jpg) no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
-footer{
-    grid-area: footer;
+.flex-branco {
+    background-color: #dad8d5;
+    display: flex;
+    justify-content: center;
 }
 
+.flex-branco > .texto {
+    text-align: justify;
+    color: #041B15;
+}
+
+.flex-branco > .texto > p {
+    font-size: 1em;
+}
+
+.flex-verde > #imagem2 {
+    background: url(../img/planta.jpg) no-repeat;
+    background-size: cover;
+    background-position: left center;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.footer > abbr > a > img {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 60px;
+}
+
+.ajuda {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ajuda > li > a {
+    margin: 15px;
+    padding: 10px;
+    color: #0e7e25;
+}
+
+.ajuda > li > a:hover {
+    text-decoration: underline;
+}
+
+.sociais {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.social > a {
+    color: #0e7e25;
+}
+
+.social:hover {
+    background-color: #1e4e48;
+    border-color: #1e4e48;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+    -webkit-transition: background-color .7s, border-color .7s, color .2s;
+    -moz-transition: background-color .7s, border-color .7s, color .2s;
+    -ms-transition: background-color .7s, border-color .7s, color .2s;
+    -o-transition: background-color .7s, border-color .7s, color .2s;
+}
+
+.social:hover > a {
+    color: white;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
