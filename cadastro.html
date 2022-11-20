@@ -7,6 +7,7 @@
     <title>Atlântico Plantas</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="shortcut icon" href="img/logo-planeta.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
     <style>
         section#login {
@@ -129,11 +130,18 @@ form > input[type=submit] {
             </div>
         </header>
         <main>
+            <script>
+                $('#cadastrar').click (function(){
+
+                })
+
+
+            </script>
             <section id="login">
                 <div id="formulario">
                     <h1>Cadastro</h1>
                     <p>Cadastre-se para continuar suas compras!</p>
-                    <form action="" method="post" autocomplete="on">
+                    <form id="cadastro"  action="" method="post" autocomplete="on">
                         <div class="campo">
                             <!--ícone--> 
                             <lord-icon src="https://cdn.lordicon.com/dxjqoygy.json" trigger="hover" colors="primary:#000000,secondary:#0da16f" stroke="70" axis-y="50" state="hover-looking-around" style="width:50px;height:50px"></lord-icon>
@@ -163,8 +171,12 @@ form > input[type=submit] {
                             <input type="password" name="senha" id="isenha" placeholder="Confirmar senha" autocomplete="current-password" required minlength="8">
                             <label for="isenha">Confirmar senha:</label>
                         </div>
-                        <input type="submit" value="Cadastrar">                       
+                        <input id="cadastrar"  type="submit" value="Cadastrar">                       
                     </form>
+                    <div class="resposta">
+                        <p>ajax</p>
+
+                    </div>
                 </div>
             </section>
         </main>
