@@ -39,7 +39,7 @@ a {
 }
 
 .menu > li > a:hover {
-    color: #89c8fd;
+    color: #041B15;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
     transition: all .3s;
 }

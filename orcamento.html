@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlântico Plantas</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <link rel="stylesheet" href="estilos/form-orcamento.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="shortcut icon" href="img/logo-planeta.png" type="image/x-icon">
@@ -30,42 +30,57 @@
         </nav>
     </header>
 
-    <main>
-        <section class="flex-verde">
-            <div class="texto">
-                <h1>
-                    Sobre nós
-                </h1>
-                <p>
-                    Nós da Atlântico Plantas, somos especialistas em mudas e plantas para fins de consumo e estético. Fomos pioneiros na criação de sites para compras e pedidos de suas plantas favoritas.
-                </p>
-            </div>
-            <div class="imagem" id="imagem1">
-            </div>
+    <main class="form-orcamento">
+        <section class="texto-orcamento">
+            <h1>Solicite Seu Orçamento</h1>
+            <p>Trabalhamos para construir um relacionamento comercial de sucesso e garantir que você aproveite ao máximo nossos serviços.</p>
+            <a href="index.html">Voltar</a>
         </section>
+        
+        <section class="formulario-orcamento">
+            <form action="" method="post" autocomplete="on">
+                <div class="campo-orcamento">
+                    <label for="inome">Nome*</label>
+                    <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required placeholder="Por exemplo, Joyce">
+                </div>
 
-        <section class="flex-branco">
-            <div class="texto">
-                <h1>Nossa Tradição</h1>
-                <p>
-                    Sobre a Atlântico Plantas 
-                    <span class="material-symbols-outlined">
-                    eco
-                    </span>
-                </p>
-                <br>
-                <p>Somos especialistas no ramo do paisagismo e jardins verticais, dando continuidade a um trabalho familiar com vasto conhecimento em plantas e flores, desenvolvido ao longo de mais de 40 anos.</p>
-                <br>
-                <p>Com um propósito de unir a paixão pelo paisagismo e a capacidade técnica da Engenharia (projetos, planejamento e gerenciamento de obras), demos início a Atlântico Plantas. Levando a sustentabilidade e o design biofílico através de conceitos inovadores, proporcionando os benefícios da natureza no seu ambiente tanto comercial e corporativo quanto residencial.</p>
-            </div>
-        </section>
+                <div class="campo-orcamento">
+                    <label for="isobrenome">Sobrenome*</label>
+                    <input type="text" name="sobrenome" id="isobrenome" minlength="5" maxlength="20" required placeholder="Por exemplo, Pereira">
+                </div>
 
-        <section class="flex-verde">
-            <div class="imagem" id="imagem2">
-            </div>
-            <div class="texto">
-                <h1>A Atlântico Plantas acredita na capacidade da natureza e do verde de renovar a energia do ambiente e das pessoas que nele se encontram.</h1>
-            </div>
+                <div class="campo-orcamento">
+                    <label for="iemail">Email*</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="nome@exemplo.com">
+                </div>
+
+                <div class="campo-orcamento">
+                    <label for="itel">Telefone*</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4, 5}-[0-9]{4}$" required placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="campo-orcamento">
+                    <label for="icep">CEP*</label>
+                    <input type="text" name="cep" id="icep" required placeholder="00000-00">
+                </div>
+
+                <div class="campo-orcamento">
+                    <label for="itipojardim">Tipo de Jardim</label>
+                    <select name="tipodejardim" id="itipodejardim" required>
+                        <option value="" selected>Escolha uma opção</option>
+                        <optgroup label="Jardins Verticais">
+                        <option value="JVP">Jardim Vertical Preservado</option>
+                        <option value="JVN">Jardim Vertical Natural</option>
+                        <option value="JVA">Jardim Vertical Artificial</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
         </section>
     </main>
 

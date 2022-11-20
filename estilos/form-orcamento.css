@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-orcamento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #041b15;
+}
+
+.texto-orcamento {
+    max-width: 450px;
+    margin-right: 100px;
+}
+
+.texto-orcamento > h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.texto-orcamento > p {
+    color: white;
+    font-size: 1.25em;
+    line-height: 1.6em;
+    margin-bottom: 40px;
+}
+
+.texto-orcamento > a {
+    text-decoration: none;
+    padding: 13px 26px;
+    background-color: white;
+    color: #0d4a29;
+    font-size: 18px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.texto-orcamento > a:hover {
+    background-color: #0d4a29;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+}
+
+.formulario-orcamento {
+    width: 400px;
+    height: 700px;
+    padding: 30px;
+    margin: 50px 0px;
+    background-color: #dad8d5;
+    border-radius: 10px;
+}
+
+.campo-orcamento > label {
+    display: block;
+    font-size: .7em;
+    color: #0d4a29;
+}
+
+.campo-orcamento > input, select {
+    width: 100%;
+    padding-bottom: 10px;
+    margin: 15px 0px 30px 0px;
+    border: none;
+    border-bottom: 2px solid #0d4a29;
+    font-size: 1.01em;
+    background-color: #dad8d5;
+    color: #0d4a29;
+} 
+
+.campo-orcamento > select > optgroup, option {
+    background-color: white;
+    color: #0d4a29;
+}
+
+.campo-orcamento > select > optgroup > option {
+    background-color: white;
+    color: #0d4a29;
+}
+
+.campo-orcamento > input, select:is(:hover,:focus){
+    box-shadow: 0;
+    outline: 0;
+}
+
+input[type=submit] {
+    margin-right: 20px;
+    padding: 13px 26px;
+    background-color: #dad8d5;
+    color: #0d4a29;
+    font-size: 18px;
+    border: 2px solid #0d4a29;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0d4a29;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+}
+
+input[type=reset] {
+    margin-right: 20px;
+    padding: 13px 26px;
+    background-color: #dad8d5;
+    color: #0d4a29;
+    font-size: 18px;
+    border: 2px solid #0d4a29;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #0d4a29;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+}
