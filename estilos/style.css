@@ -25,7 +25,7 @@ PALETA DE CORES
 .containergrid{
     display: grid ;
     grid-template-columns: 4fr;
-    grid-template-rows: 14vh 50vh 10vh;
+    grid-template-rows: 14vh 72vh 10vh;
     grid-template-areas: "header header"
                         "main main"
                         "footer footer";
@@ -132,3 +132,115 @@ main {
 footer{
     grid-area: footer;
 }
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 480px;
+    height: 390px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.447);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: url(../img/predio-pequeno.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px 16px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 40px;
+}
+
+div#formulario > p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+
+}
+
+form > div.campo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 2px solid #536976;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > input {
+    background-color:white;
+    font-size: 1em;
+    width: calc(100% - 30px);
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    padding: 4px;
+    margin: 4px 4px 4px 0px;
+}
+
+div.campo > input:is(:hover,:focus){
+    box-shadow: 0;
+    outline: 0;
+}
+
+form > input[type=submit] {
+    display: inline;
+    font-size: 1em;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(13, 161, 111);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: white;
+    color: rgb(13, 161, 111);
+    border: 2px solid rgb(13, 161, 111);
+    transition: background-color .4s, color .4s;
+}
+
+form > a.botao {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 45px;
+    padding-top: 8px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: white;
+    color: rgb(13, 161, 111);
+    border: 2px solid rgb(13, 161, 111);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: rgb(13, 161, 111);
+    color: white;
+    transition: all .4s;
+}
+
