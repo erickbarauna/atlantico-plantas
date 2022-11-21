@@ -82,16 +82,16 @@ section > .texto {
     margin: 50px;
 }
 
-.texto > h1 {
+h1 {
     font-size: 2.5em;
     margin-bottom: 30px;
 }
 
 span {
-    font-size: 2em;
+    color: #041B15;
 }
 
-.texto > p {
+p {
     font-size: 1.25em;
     line-height: 1.6em;
 }
