@@ -1,0 +1,74 @@
+main{
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.cards{
+    display: flex;
+    
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(207, 246, 217);
+    padding: 32px 16px;
+    border-radius: 8px;
+    margin-left: 32px;
+    max-height: 400px;
+    box-shadow: 20px 20px 50px -30px green;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+
+main.cards section.card image{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0px;
+}
+
+main.cards section.card span{
+    font-weight: 300px;
+    max-width: 240px;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.a-jardim {
+    padding: 13px 26px;
+    background-color: #dad8d5;
+    color: #0d4a29;
+    font-size: 14px;
+    border: 2px solid #0d4a29;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.a-jardim:hover {
+    background-color: #0d4a29;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+}
+
+
+
+
+
