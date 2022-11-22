@@ -37,7 +37,7 @@
                     <div class="div-suporte">
                         <div class="suporte" id="flip-1">
                             <p>Quero um projeto de Jardim Vertical, como prossigo o contato?</p>
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined" id="span1">
                                 expand_more
                             </span>
                         </div>
@@ -47,7 +47,7 @@
 
                         <div class="suporte" id="flip-2">
                             <p>Quanto custa um Jardim Vertical?</p>
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined" id="span2">
                                 expand_more
                             </span>
                         </div>
@@ -57,7 +57,7 @@
 
                         <div class="suporte" id="flip-3">
                             <p>Como é feita a execução de um Jardim Vertical?</p>
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined" id="span3">
                                 expand_more
                             </span>
                         </div>
@@ -74,7 +74,7 @@
 
                         <div class="suporte" id="flip-4">
                             <p>Qual é o horário de funcionamento?</p>
-                            <span class="material-symbols-outlined">
+                            <span class="material-symbols-outlined" id="span4">
                                 expand_more
                             </span>
                         </div>
@@ -125,9 +125,13 @@
     </body>
     <script>
         $(document).ready(function(){
-            $("#flip-1").click(function(){
-                $("#painel-1").slideDown(400);
+            $("#flip-1").on('click', function() {
+                if ($("#span1").text() == "expand-more") {
+                    $("#painel-1").slideDown(300);
+                }
+                
             });
+
             $("#flip-2").click(function(){
                 $("#painel-2").slideDown(400);
             });
