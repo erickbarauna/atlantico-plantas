@@ -1,0 +1,30 @@
+
+.main-suporte {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 80px 10px;
+    background-color: #041B15;
+    color: white;
+}
+
+.container-suporte {
+}
+
+.div-suporte {
+    margin-top: 50px;
+}
+
+.suporte {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin: 40px 0;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.suporte > span {
+    margin: 7px 0 0 100px;
+    color: white;
+}
