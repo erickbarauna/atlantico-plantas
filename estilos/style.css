@@ -38,6 +38,10 @@ a {
     width: 250px;
 }
 
+#burguer {
+    display: none;
+}
+
 .menu, .menu-cadastro {
     display: flex;
     flex-wrap: wrap;
@@ -110,11 +114,10 @@ p {
 .imagem {
     width: 550px;
     height: 500px;
-    margin: 10px;
     border-radius: 30px;
 }
 
-.flex-verde > #imagem1 {
+.flex-verde > #imagem1{
     background: url(../img/vasos.jpg) no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -127,6 +130,7 @@ p {
 }
 
 .flex-branco > .texto {
+
     text-align: justify;
     color: #041B15;
 }

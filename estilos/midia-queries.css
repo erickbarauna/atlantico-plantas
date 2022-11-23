@@ -1,0 +1,40 @@
+@media screen and (max-width: 1120px) {
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #burguer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: 1px solid tomato;
+    }
+    .menu, .menu-cadastro {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imagem {
+        max-width: 450px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .imagem {
+        max-width: 350px;
+        height: 300px;
+        padding: 10px;
+    }
+}
