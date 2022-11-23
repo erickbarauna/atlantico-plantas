@@ -35,50 +35,53 @@
                 <div class="container-suporte">
                     <h1>Tem alguma dúvida?</h1>
                     <div class="div-suporte">
-                        <div class="suporte" id="flip-1">
+                        <div class="suporte" onclick="flip1()">
                             <p>Quero um projeto de Jardim Vertical, como prossigo o contato?</p>
                             <span class="material-symbols-outlined" id="span1">
                                 expand_more
                             </span>
                         </div>
-                        <div class="painel" id="painel-1">
+                        <div class="painel" id="painel1">
                             Após o cliente realizar o preenchimento do formulário, nós entramos em contato, conhecemos suas características e as características físicas do local onde realizaremos o jardim, após entendermos os detalhes, apresentamos qual a melhor solução paisagística para cada caso.
                         </div>
 
-                        <div class="suporte" id="flip-2">
+                        <div class="suporte" onclick="flip2()">
                             <p>Quanto custa um Jardim Vertical?</p>
                             <span class="material-symbols-outlined" id="span2">
                                 expand_more
                             </span>
                         </div>
-                        <div class="painel" id="painel-2">
+                        <div class="painel" id="painel2">
                             O valor do Jardim Vertical varia de acordo com o gosto e as características físicas do ambiente do cliente.
                         </div>
 
-                        <div class="suporte" id="flip-3">
+                        <div class="suporte" onclick="flip3()">
                             <p>Como é feita a execução de um Jardim Vertical?</p>
                             <span class="material-symbols-outlined" id="span3">
                                 expand_more
                             </span>
                         </div>
-                        <div class="painel" id="painel-3">
+                        <div class="painel" id="painel3">
                             O processo é o seguinte:
-                            <ul>
-                                <li>Após apresentarmos a melhor solução paisagística para o caso e a proposta for aprovada, para que não haja nenhuma falha na execução, realizamos uma visita técnica para confirmação dos dados passados pelo cliente.</li>
-                                <li>Após a confirmação dos dados em visita técnica, damos início ao projeto executivo, onde apresentamos, para aprovação do nosso cliente, todos os detalhes para a produção e execução do jardim.</li>
-                                <li>No momento da negociação, verificamos o melhor prazo para atender os nossos clientes, em um trabalho conjunto ao cronograma interno e cumprido 100% com os nossos prazos. O prazo máximo é de 15 dias úteis.</li>
-                                <li>Com o projeto executivo em mãos, nossa equipe especializada realizará a execução do paisagismo com excelência, nesse processo nos preocupamos com o todo: proteção individual dos colaboradores, organização e limpeza no local da instalação, qualidade e eficácia na execução. Por fim recolhemos com o cliente o “Termo de aceite”.</li>
-                                <li>Nosso time de pós-venda entra em contato com os clientes para fazer uma avaliação do resultado entregue, os depoimentos passados são avaliados e utilizados para melhoria contínua.</li>
-                            </ul>
+                            <br><br>
+                            1 - Após apresentarmos a melhor solução paisagística para o caso e a proposta for aprovada, para que não haja nenhuma falha na execução, realizamos uma visita técnica para confirmação dos dados passados pelo cliente.
+                            <br><br>
+                            2 - Após a confirmação dos dados em visita técnica, damos início ao projeto executivo, onde apresentamos, para aprovação do nosso cliente, todos os detalhes para a produção e execução do jardim.
+                            No momento da negociação, verificamos o melhor prazo para atender os nossos clientes, em um trabalho conjunto ao cronograma interno e cumprido 100% com os nossos prazos. O prazo máximo é de 15 dias úteis.
+                            <br><br>
+                            3 - Com o projeto executivo em mãos, nossa equipe especializada realizará a execução do paisagismo com excelência, nesse processo nos preocupamos com o todo: proteção individual dos colaboradores, organização e limpeza no local da instalação, qualidade e eficácia na execução. Por fim recolhemos com o cliente o “Termo de aceite”.
+                            <br><br>
+                            4 - Nosso time de pós-venda entra em contato com os clientes para fazer uma avaliação do resultado entregue, os depoimentos passados são avaliados e utilizados para melhoria contínua.
+                            
                         </div>
 
-                        <div class="suporte" id="flip-4">
+                        <div class="suporte" onclick="flip4()">
                             <p>Qual é o horário de funcionamento?</p>
                             <span class="material-symbols-outlined" id="span4">
                                 expand_more
                             </span>
                         </div>
-                        <div class="painel" id="painel-4">
+                        <div class="painel" id="painel4">
                             Nosso horário de funcionamento é das 08:00 às 18:00 (horário comercial).
                         </div>
                     </div>
@@ -123,33 +126,5 @@
             </footer>
         </div>
     </body>
-    <script>
-        $(document).ready(function(){
-            $("#flip-1").on('click', function() {
-                if ($("#span1").text() == "expand-more") {
-                    $("#painel-1").slideDown(300);
-                }
-                
-            });
-
-            $("#flip-2").click(function(){
-                $("#painel-2").slideDown(400);
-            });
-            $("#flip-3").click(function(){
-                $("#painel-3").slideDown(400);
-            });
-            $("#flip-4").click(function(){
-                $("#painel-4").slideDown(400);
-            });
-
-
-
-            $("#flipUp").click(function(){
-                $("#painel").slideUp(1500);
-            });
-            $("#stop").click(function(){
-                $("#painel").stop();
-            });
-        });
-    </script>
+    <script src="js/suporte.js"></script>
 </html>
