@@ -3,16 +3,20 @@ main{
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.cards{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-main.cards{
-    display: flex;
-    
-}
-
-main.cards section.card{
+div.cards section.card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,26 +29,26 @@ main.cards section.card{
     box-shadow: 20px 20px 50px -30px green;
 }
 
-main.cards section.card:first-child{
+div.cards section.card:first-child{
     margin-left: 0;
 }
 
 
-main.cards section.card image{
+div.cards section.card image{
     width: 64px;
     height: 64px;
 }
 
-main.cards section.card img{
+div.cards section.card img{
     width: 100%;
 }
 
-main.cards section.card h3{
+div.cards section.card h3{
     font-size: 100%;
     margin: 16px 0px;
 }
 
-main.cards section.card span{
+div.cards section.card span{
     font-weight: 300px;
     max-width: 240px;
     font-size: 13px;
@@ -69,6 +73,55 @@ main.cards section.card span{
 }
 
 
+div.cards1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+div.cards2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
 
 
+div.todosCards{
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1200px;
+}
 
+div.cards1 section.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(207, 246, 217);
+    padding: 32px 16px;
+    border-radius: 8px;
+    margin-left: 32px;
+    max-height: 400px;
+    box-shadow: 20px 20px 50px -30px green;
+}
+
+div.cards2 section.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(207, 246, 217);
+    padding: 32px 16px;
+    border-radius: 8px;
+    margin-left: 32px;
+    max-height: 400px;
+    box-shadow: 20px 20px 50px -30px green;
+}
+
+div.cards1 section.card1:first-child{
+    margin-left: 0;
+}
+
+div.cards2 section.card2:first-child{
+    margin-left: 0;
+}
