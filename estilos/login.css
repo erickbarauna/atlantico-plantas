@@ -28,34 +28,42 @@
             grid-area: header;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             padding: 40px;
             border-bottom: 20px solid #dad8d5;
         }
-
+        
         .header > a > img {
             width: 250px;
         }
-
+        
+        #burguer {
+            display: none;
+        }
+        
         .menu, .menu-cadastro {
             display: flex;
             flex-wrap: wrap;
         }
-
+        
+        .menu {
+            margin-right: 100px;
+        }
+        
         .menu > li > a {
             color: #0e7e25;
             font-size: 18px;
             padding: 13px 26px;
             border-radius: 30px;
         }
-
+        
         .menu > li > a:hover {
             color: #041B15;
             box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
             transition: all .3s;
         }
-
+        
         .menu-cadastro > li > a {
             margin-right: 20px;
             padding: 13px 26px;
@@ -65,7 +73,7 @@
             border-radius: 30px;
             box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
         }
-
+        
         .menu-cadastro > li > a:hover {
             background-color: #1e4e48;
             border-color: #1e4e48;
@@ -86,6 +94,7 @@
         flex-wrap: wrap;
         width: 500px;
         max-width:100%;
+        max-height: 100%;
         background-color: #DAD8D5; 
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.447);
@@ -174,38 +183,34 @@
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            padding: 40px;
+            padding: 20px;
             border-top: 20px solid #dad8d5;
         }
-
+        
         .footer > abbr > a > img {
             margin-left: 0px;
             margin-right: 0px;
             width: 60px;
         }
-
-        .ajuda {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
+        
         .ajuda > li > a {
             font-size: .9em;
             margin: 15px;
             padding: 20px;
             color: #0e7e25;
         }
-
+        
         .ajuda > li > a:hover {
             text-decoration: underline;
         }
-
+        
         .sociais {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            margin-right: 30px;
+        
         }
-
+        
         .social {
             width: 40px;
             height: 40px;
@@ -219,11 +224,11 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
         }
-
+        
         .social > a {
             color: #0e7e25;
         }
-
+        
         .social:hover {
             background-color: #1e4e48;
             border-color: #1e4e48;
@@ -234,7 +239,7 @@
             -ms-transition: background-color .7s, border-color .7s, color .2s;
             -o-transition: background-color .7s, border-color .7s, color .2s;
         }
-
+        
         .social:hover > a {
             color: white;
             transition: .4s;
