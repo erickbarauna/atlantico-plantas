@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlântico Plantas</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midia-queries.css">
     <link rel="shortcut icon" href="img/logo-planeta.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
         section#login {
     position: absolute;
@@ -111,23 +113,22 @@ form > input[type=submit] {
 </head>
 <body>
     <div class="containergrid">
-        <header>
-            <div class="logo-header">
-                <abbr title="Página principal">
-                    <a href="index.html">
-                        <img src="img/logo-plantas_verde.jpg" alt="Logo Atlântico Plantas">
-                    </a>
-                </abbr>
-            </div>
-            <div class="menu">
-                <a class="link-menu" href="">Serviços</a>
-                <a class="link-menu" href="">Loja</a>
-                <a class="link-menu" href="">Sobre nós</a>
-            </div>
-            <div class="cadastro">
-                <a class="link-cadastro btn fourth" href="login.html">Login</a>
-                <a class="link-cadastro btn fourth" href="cadastro.html">Cadastre-se</a>
-            </div>
+        <header class="header">
+            <a href="index.html"><img src="img/logo-atlantico-plantas.png" alt="Logo"></a>
+            <div><span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span></div>
+            <nav>
+                <ul class="menu" id="menu">
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="jardins-verticais.html">Jardins Verticais</a></li>
+                    <li><a href="orcamento.html">Orçamento</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="menu-cadastro" id="menucadastro">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
             <script>
@@ -184,6 +185,6 @@ form > input[type=submit] {
             <img class="logo-footer" src="img/logo-plantas.png" alt="">
         </footer>
     </div>
-    
 </body>
+<script src="js/menu.js"></script>
 </html>
