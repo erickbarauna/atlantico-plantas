@@ -45,9 +45,8 @@
 
 .formulario-orcamento {
     width: 400px;
-    height: 700px;
     padding: 30px;
-    margin: 50px 0px;
+    margin: 20px 0 60px 0;
     background-color: #dad8d5;
     border-radius: 10px;
 }
@@ -103,7 +102,7 @@ input[type=submit]:hover {
 }
 
 input[type=reset] {
-    margin-right: 20px;
+    margin: 20px 20px 0 0;
     padding: 13px 26px;
     background-color: #dad8d5;
     color: #0d4a29;
