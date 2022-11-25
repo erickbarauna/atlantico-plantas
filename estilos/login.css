@@ -77,27 +77,25 @@
             grid-area: main;
             height: 85vh;
             background-color: #041B15;
+            display: flex;
         }
 
         section#login {
-        position: absolute;
-        top: 68.5%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
-        background-color: #DAD8D5;
-        width: 500px;
+        margin: auto;
         height: 400px;
+        flex-wrap: wrap;
+        width: 500px;
+        max-width:100%;
+        background-color: #DAD8D5; 
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.447);
-        transition: width .3s, height .3s;
-        transition-timing-function: ease;
         }
 
         section#login > div#formulario {
-            display: block;
-            padding: 10px 20px;
-            }
+        display: block;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        }
 
         div#formulario > h1 {
         text-align: center;
@@ -141,12 +139,15 @@
         }
 
         .botao{
-            text-align: center;
-            margin-top: 30px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         margin-top: 30px;
         }
 
         div.botao > input[type=submit] {
-        margin-right: 20px;
+        margin-right: 25px;
         padding: 13px 26px;
         background-color: #dad8d5;
         color: #0d4a29;
@@ -155,6 +156,10 @@
         border-radius: 30px;
         box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
         cursor: pointer;
+        }
+
+        section#login > div#formulario a {
+            color: #0d4a29; 
         }
 
         div.botao > input[type=submit]:hover {
