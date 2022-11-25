@@ -1,8 +1,15 @@
+@media screen and (max-width: 1600px) {
+    .menu {
+        margin: 0%;
+    }
+}
+
 @media screen and (max-width: 1120px) {
     .header {
-        display: flex;
+        display: block;
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
     }
 
     .header {
@@ -13,43 +20,39 @@
     #burguer {
         display: flex;
         justify-content: center;
-        width: 100%;
         background-color: #dad8d5;
         padding: 10px;
         cursor: pointer;
     }
 
     .menu-cadastro {
-        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #dad8d5;
     }
 
     .menu {
         display: block;
         justify-content: center;
         align-items: center;
+        background-color: #dad8d5;
     }
 
     .menu > li {
-        margin: 30px;
+        padding: 18px;
     }
 
-    .menu-cadastro > li:not(:last-child) {
-        margin-bottom: 35px;
+    .menu-cadastro > li{
+        padding: 25px 0;
     }
 
     #menu {
         display: none;
     }
 
-    #menu-cadastro {
+    #menucadastro {
         display: none;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .imagem {
-        max-width: 450px;
-        height: 400px;
     }
 }
 
@@ -69,6 +72,13 @@
     }
 
     .header > a > img {
-        width: 200px;
+        max-width: 200px;
+    }
+
+    .footer {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

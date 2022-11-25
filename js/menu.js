@@ -1,12 +1,12 @@
 function clickMenu() {
-    if (menu.style.display == "none") {
+    if (menu.style.display == "block") {
         burguer.innerHTML = "menu";
-        menu.style.display = "block";
-        menucadastro.style.display = "block";
+        menu.style.display = "none";
+        menucadastro.style.display = "none";
     }
     else {
         burguer.innerHTML = "close";
-        menu.style.display = "none";
-        menucadastro.style.display = "none";
+        menu.style.display = "block";
+        menucadastro.style.display = "flex";
     }
 }
