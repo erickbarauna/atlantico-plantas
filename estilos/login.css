@@ -83,9 +83,8 @@
 
         main {
             grid-area: main;
-            height: 85vh;
             background-color: #041B15;
-            display: flex;
+            padding: 80px;
         }
 
         section#login {
@@ -94,14 +93,13 @@
         flex-wrap: wrap;
         width: 500px;
         max-width:100%;
-        max-height: 100%;
+        max-height: 500px;
         background-color: #DAD8D5; 
         border-radius: 20px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.447);
         }
 
         section#login > div#formulario {
-        display: block;
         flex-wrap: wrap;
         padding: 10px 20px;
         }
