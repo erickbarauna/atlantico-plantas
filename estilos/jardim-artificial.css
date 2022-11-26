@@ -144,6 +144,79 @@ p {
     text-align: justify;
 }
 
+.box-texto1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 35px;
+    max-width: 900px;
+    color: white;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    max-width: 100%;
+}
+
+.box {
+
+    padding: 30px 30px 40px 30px;
+    margin: 20px;
+    background-color: #dad8d5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#img-jardim {
+    height: 350px;
+    width: 100%;
+}
+
+#h1-jardim {
+    margin: 10px;
+    font-size: 1em;
+    color: #041B15;
+}
+
+.icones-jardim {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 30px;
+}
+
+#p-jardim {
+    text-align: start;
+    font-size: 14px;
+    padding-top: 7px;
+    color: #041B15;
+}
+
+.a-jardim {
+    padding: 13px 26px;
+    background-color: #dad8d5;
+    color: #0d4a29;
+    font-size: 18px;
+    border: 2px solid #0d4a29;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.a-jardim:hover {
+    background-color: #0d4a29;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+}
+
+.box-texto2 {
+    margin: 0 auto;
+    padding: 80px 50px;
+    max-width: 900px;
+    color: white;
+}
+
 .footer {
     grid-area: footer;
     display: flex;
