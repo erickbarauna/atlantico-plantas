@@ -93,6 +93,16 @@
         align-items: center;
         text-align: center;
     }
+    .text-preservado{
+        margin-left: -50px;
+        font-size: 12px;
+        max-width: 200px;
+        padding: 50px;
+    }
+    .img-preservado > img{
+        height: 400px;
+        width: 200px;   
+    }
 }
 
 @media screen and (max-width: 447px) {
@@ -100,4 +110,15 @@
         height: 430px;
     }
 
+    .titulo{
+        margin-left: -50px;
+    }
+
+    .cards{
+        margin-left: -50px;
+    }
+
+    #botao{
+        margin-left: -50px;
+    }
 }

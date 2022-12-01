@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="../atlantico-plantas/estilos/produto.css">
+    <link rel="stylesheet" href="estilos/produto.css">
     <link rel="stylesheet" href="estilos/midia-queries.css">
+    <link rel="stylesheet" href="estilos/jardins-verticais.css">
     <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+    <script src="js/produto.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
@@ -30,125 +32,173 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="todosCards">
-            <div class="cards">
-                <section class="card">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum</span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum
-                    </span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px" alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum </span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum</span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
+        <main class="main-preservados">
+            <div class="titulo">
+                <h1>Nossa loja!</h1>
             </div>
-            <div class="cards1">
-                <section class="card1">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum</span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card1">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum
-                    </span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card1">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px" alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum </span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card1">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum</span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-            </div>
-            <div class="cards2">
-                <section class="card2">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum
-                    </span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card2">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px" alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum </span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
-                </section>
-
-                <section class="card2">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum</span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
+            <div class="alinhaProdutos">
+                <div class="cards">
+                    <section class="card">
+                        <img src="img/produtoPa.jpg" width="180px" height="180px"  alt="">
+                        <h1>Kit Ferramenta</h1>
+                        <p>R$ 120,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade1" id="Quantidade1">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtoLuva.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Luva</h1>
+                        <p>R$ 60,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade2">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtoTesoura.jpg" width="180px" height="180px" alt="">
+                        </div>
+                        <h1>Tesoura de poda</h1>
+                        <p>R$ 80,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade3">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtoRegador.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Regador</h1>
+                        <p>R$ 50,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade4">
                     </section>
                     
-                <section class="card2">
-                    <div class="image">
-                        <img src="..//atlantico-plantas/img/aleatoria.jpg" width="180px" height="180px"  alt="">
-                    </div>
-                    <h3>contact us</h3>
-                    <span>Lorem ipsum</span>
-                    <a class="a-jardim" href="../atlantico-plantas/orcamento.html">Compre</a>
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtoVaso.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Vaso Decorativo</h1>
+                        <p>R$ 45,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade5">
                     </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/ProdutoBonsai.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Bonsai</h1>
+                        <p>R$ 450,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade6">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtosuculenta.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Suculenta</h1>
+                        <p>R$ 30,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade7">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtocacto.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Cacto</h1>
+                        <p>R$ 47,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade8">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtomaracuja.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Semente de Maracujá</h1>
+                        <p>R$ 5,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade9">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtomelao.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Semente de Melão</h1>
+                        <p>R$ 6,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade10">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtoabobora.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Semente de Ma</h1>
+                        <p>R$ 2,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade11">
+                    </section>
+    
+                    <section class="card">
+                        <div class="image">
+                            <img src="img/produtogirassol.jpg" width="180px" height="180px"  alt="">
+                        </div>
+                        <h1>Semente de Girassol</h1>
+                        <p>R$ 2,00</p>
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" class="Quantidade" name="Quantidade" id="Quantidade12">
+                    </section>
+                </div>
             </div>
-        </div>
-    </main>
- 
+            <input type="submit" id="botao" class="a-jardim" name="botao" value="Valor Total" onclick="botao()">
+            <input type="submit" class="a-jardim" name="comprar" value="Comprar" onclick="comprar()">
+            <div id="resposta">
+            </div>
+        </main>
+        <footer class="footer">
+            <abbr title="Página inicial">
+                <a href="index.html"><img src="img/logo-planeta.png" alt="Logo"></a>
+            </abbr>
+            <nav>
+                <ul class="ajuda">
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </nav>
+            <div class="sociais">
+                <abbr title="Twitter">
+                    <div class="social">
+                        <a href="#"><i class="fa fa-twitter" arial-hidden="true"></i></a>
+                    </div>
+                </abbr>
+                <abbr title="Facebook">
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook" arial-hidden="true"></i></a>
+                    </div>
+                </abbr>
+                <abbr title="LinkedIn">
+                    <div class="social">
+                        <a href="#"><i class="fa fa-linkedin" arial-hidden="true"></i></a>
+                    </div>
+                </abbr>
+                <abbr title="Whatsapp">
+                    <div class="social">
+                        <a href="#"><i class="fa fa-whatsapp" arial-hidden="true"></i></a>
+                    </div>
+                </abbr>
+                <abbr title="Instagram">
+                    <div class="social">
+                        <a href="#"><i class="fa fa-instagram" arial-hidden="true"></i></a>
+                    </div>
+                </abbr>
+            </div>
+        </footer>    
 </body>
 <script src="js/menu.js"></script>
 </html>
