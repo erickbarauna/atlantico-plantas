@@ -40,4 +40,21 @@ p {
     
 }
 
+.voltarjardim > a {
+    margin-right: 20px;
+    padding: 13px 26px;
+    color: #0e7e25;
+    font-size: 18px;
+    border: 2px solid #0e7e25;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.24);
+}
+
+.voltarjardim > a:hover {
+    background-color: #1e4e48;
+    border-color: #1e4e48;
+    color: white;
+    transition: background-color .7s, border-color .7s, color .2s;
+}
+
 

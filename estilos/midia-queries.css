@@ -107,7 +107,11 @@
 
 @media screen and (max-width: 447px) {
     section#login {
-        height: 430px;
+        height: 440px;
+    }
+
+    section#cadastro {
+        height: 600px;
     }
 
     .titulo{
