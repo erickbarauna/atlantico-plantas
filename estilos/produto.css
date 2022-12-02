@@ -1,6 +1,5 @@
 .main-preservados {
     text-align: center;
-    border: 1px solid tomato;
     padding: 10px;
     background-color: #dad8d5;
 } 
@@ -15,7 +14,6 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1140px;
-    border: 1px solid tomato;
     margin: 10px;
     padding: 10px;
     margin-top: 100px;
@@ -24,7 +22,6 @@
 .titulo{
     color: white;
     background-color:#041B15 ;
-    border: 1px solid tomato;
     margin: 10px;
     padding: 10px; 
 }
